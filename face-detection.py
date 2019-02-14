@@ -11,10 +11,10 @@ __status__ = "Prototype"
 import cv2
 
 # Create cascade classifier object to search for face
-face_cascade=cv2.CascadeClassifier("/home/stacy/py-sandbox/data/haarcascade_frontalface_default.xml")
+face_cascade=cv2.CascadeClassifier("./data/haarcascade_frontalface_default.xml")
 
 # Load image via imread method as color image
-img=cv2.imread("/home/stacy/py-sandbox/data/stacy.jpg")
+img=cv2.imread("./data/stacy.jpg")
 
 # Convert to gray scale image to search (easier to classify- increase in accuracy)
 gray_scale_img=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
